@@ -31,7 +31,7 @@ app.use(cors())
 app.use(expressvalidator())
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', 'https://localhost:3000');
   res.setHeader('Access-Control-Allow-Methods', 'PUT, POST, PATCH, GET, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, A-Requested-With, Content-Type, Accept, Authorization');
   res.setHeader('Access-Control-Allow-Credentials', true)
